@@ -5,8 +5,11 @@
     "authors": [
         {
             "name": "Rafael Martinez",
-            "email": ""
+            "email": "rafael.loamartinez@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "guzzlehttp/guzzle": "^7.4",
+        "symfony/dom-crawler": "^5.4.9"
+    }
 }
