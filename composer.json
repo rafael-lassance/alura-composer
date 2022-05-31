@@ -1,0 +1,12 @@
+{
+    "name": "rafael-lassance/buscador-cursos",
+    "description": "Projeto que busca os cursos no site da Alura",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Rafael Martinez",
+            "email": "rafael.loamartinez@gmail.com"
+        }
+    ],
+    "require": {}
+}
