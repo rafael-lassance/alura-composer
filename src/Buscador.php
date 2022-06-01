@@ -2,17 +2,16 @@
 
 namespace Alura\BuscadorDeCursos;
 
-use \GuzzleHttp\Client;
-use \Symfony\Component\DomCrawler\Crawler;
+use GuzzleHttp\Client;
+use Symfony\Component\DomCrawler\Crawler;
 
-
-class Buscador {
-
+class Buscador
+{
     private Client $client;
     private Crawler $crawler;
 
 
-    public function __construct( Client $client, Crawler $crawler) {
+    public function __construct(Client $client, Crawler $crawler) {
         $this->client = $client;
         $this->crawler = $crawler;
     }
