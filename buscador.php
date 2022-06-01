@@ -1,7 +1,9 @@
 <?php
 
+require "vendor/autoload.php";
+
 use \GuzzleHttp\Client;
-use Symfony\Component\DomCrawler\Crawler;
+use \Symfony\Component\DomCrawler\Crawler;
 
 $client = new Client();
 
@@ -11,8 +13,11 @@ $status = $response->getStatusCode(); // 200
 $header = $response->getHeaderLine('content-type');
 $html   = $response->getBody(); 
 
-$crawler = new Crawler($html);
+$crawler = new Crawler();
+$crawler->addHtmlContent($html);
 
-foreach ($crawler as $domElement) {
-    var_dump($domElement->nodeName);
+$cursos = $crawler->filter("span.card-curso__nome");
+
+foreach ($cursos as $curso) {
+    echo $curso->textContent . PHP_EOL;
 }
