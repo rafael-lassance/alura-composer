@@ -1,6 +1,7 @@
 <?php
 
 use \GuzzleHttp\Client;
+use Symfony\Component\DomCrawler\Crawler;
 
 $client = new Client();
 
@@ -10,3 +11,8 @@ $status = $response->getStatusCode(); // 200
 $header = $response->getHeaderLine('content-type');
 $html   = $response->getBody(); 
 
+$crawler = new Crawler($html);
+
+foreach ($crawler as $domElement) {
+    var_dump($domElement->nodeName);
+}
