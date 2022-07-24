@@ -34,4 +34,9 @@ class Buscador
         return $cursos;
     }
 
+    public static function metodo_teste()
+    {
+        echo "Hello!";
+    }
+
 }

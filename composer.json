@@ -33,10 +33,22 @@
         "test": "phpunit --version",
         "cs": "phpcs --standard=PSR12 src",
         "phan": "phan --allow-polyfill-parser",
+        "ls": "dir",
+        "limpa-cache": "del cache",
+        "aciona_metodo": "Alura\\BuscadorDeCursos\\Buscador::metodo_teste",
         "check": [
             "@test",
             "@phan",
-            "@cs"          
+            "@cs"
+        ],
+        "post-update-cmd": [
+            "@test"
         ]
+    },
+    "scripts-descriptions": {
+        "check": "Roda as verificações do código: PHAN, PHPCS, PHPUNIT.",
+        "cs": "cs script description",
+        "phan": "phan script description",
+        "test": "test script description"
     }
 }
