@@ -4,8 +4,7 @@
     "type": "library",
     "authors": [
         {
-            "name": "Rafael Martinez",
-            "email": "teste@teste.com"
+            "name": "Rafael Martinez"
         }
     ],
     "require": {
@@ -50,5 +49,7 @@
         "cs": "cs script description",
         "phan": "phan script description",
         "test": "test script description"
-    }
+    },
+    "licence": "GPL-3.0",
+
 }
