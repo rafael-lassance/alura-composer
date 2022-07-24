@@ -50,5 +50,6 @@
         "phan": "phan script description",
         "test": "test script description"
     },
-    "license": "GPL-3.0"
+    "license": "GPL-3.0",
+    "bin": "buscador.php"
 }
