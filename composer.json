@@ -50,5 +50,5 @@
         "phan": "phan script description",
         "test": "test script description"
     },
-    "licence": "GPL-3.0"
+    "license": "GPL-3.0"
 }
